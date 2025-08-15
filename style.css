@@ -21,3 +21,38 @@ body{
     text-align: center;
     line-height: 100px;
 }
+
+#menu{
+
+
+    background-color: yellow
+    color: white;
+    height: 50px;
+    border-bottom: 4px solid #01b1ea;
+
+}
+
+#menu ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    margin-left: 25px;
+}
+
+#menu ul li{
+    line-height: 55px;
+    float: left;
+    border-right: 1px solid #363636;
+}
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#menu a:hover{
+    background-color: #01b1ea;
+}
