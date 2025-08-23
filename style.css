@@ -11,12 +11,13 @@ body{
    width: 80%;
    margin: 0px auto;
    border: 1px solid black;
+   background: white;
 
 }
 
 #header{
     height: 145px;
-    background-color: brown;
+    background-color: brow#F0F0F0;
     color: white;
     text-align: center;
     line-height: 100px;
@@ -37,10 +38,10 @@ body{
 }
 
 #menu {
-
+    clear: both;
     background-color: #2222;
     color: white;
-    height: 50px;
+    height: 55px;
     border-bottom: 4px solid #01b1ea;
 
 }
@@ -68,4 +69,24 @@ body{
 
 #menu a:hover{
     background-color: #01b1ea;
+}
+
+
+#content{
+    margin:  0px auto;
+    overflow: hidden;
+    background: white;
+
+}
+
+/* barra lateral */
+#lateral{
+    width: 20%;
+    border: 1px solid red;
+
+}
+
+#central{
+    width: 80%;
+    border: 1px solid blue;
 }
