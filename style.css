@@ -12,11 +12,13 @@ body{
    margin: 0px auto;
    border: 1px solid black;
    background: white;
+   background: white;
 
 }
 
 #header{
     height: 145px;
+    background-color: brow#F0F0F0;
     background-color: brow#F0F0F0;
     color: white;
     text-align: center;
