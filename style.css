@@ -84,7 +84,7 @@ body{
 /* barra lateral */
 #lateral {
     width: 19%;
-    min-height: 650px;
+    min-height: 600px;
     border: 1px solid red;
     float: left;
     margin-top: 20px;
@@ -142,7 +142,7 @@ input[type="email"]:focus{
 
 input[type="submit"],
 input[type="button"],
-button{
+.button{
 
 display: block;
 border-radius: 2px;
@@ -160,7 +160,7 @@ cursor: pointer;
 
 #central{
     width: 79%;
-    min-height: 650px;
+    min-height: 600px;
     float:right;
     border: 1px solid blue;
     margin-top: 20px;
@@ -203,4 +203,14 @@ cursor: pointer;
 
 .product a:hover{
     color: #5555;
+}
+
+#footer{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: black;
+    color: white;
+    border-top: 5px solid #01b1ea;
+    
 }
