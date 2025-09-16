@@ -1,84 +1,80 @@
-<?php
+<?php //modelo es el que conecta con la base de datos
 
-require_once 'config/database.php';
+require_once 'config/database.php'; //sirve para no volver a escribir el mismo codigo para realiar una funcion, ejemplo function saliuda(hola) despues saluda()
 
-class usuario{
-   
-   public $db;
-   
-   public function _construct(){
-    $this->db = database::conectar();
-   }
+class Usuario{
+    
+    public $db;
 
-   public $id_usuario;
-   public $nombre;
-   public $apellido;
-   public $email;
-   public $password;
-   public $rol;
-   public $imagen;
+    public function __construct(){
+        $this->db = database::conectar();
+    }
 
-   function getId_usuario(){
-    return $this->id_usuario;
- }
+    public $id_usuario;
+    public $nombre;
+    public $apellido;
+    public $email;
+    public $password;
+    public $rol;
+    public $imagen;
 
- function getNombre(){
-    return $this->nombre;
+    function getId_usuario(){
+        return $this->id_usuario;
+    }
 
- }
+    function getNombre(){
+        return $this->nombre;
+    }
 
- function getApellido(){
-    return $this->apellido;
+    function getApellido(){
+        return $this->apellido;
+    }
 
- }
+    function getEmail(){
+        return $this->email;
+    }
 
- function getEmail(){
-   return $this->getEmail;
+    function getPassword(){
+        return $this->password;
+    }
 
- }
+    function getRol(){
+        return $this->rol;
+    }
 
- function getPassword(){
-    return $this->password;
+    function getImagen(){
+        return $this->imagen;
+    }
 
+    function setId_usuario(){
+        $this->id_usuario = $id_usuario; 
+    }
 
- } 
+    function setNombre(){
+        $this->nombre = $nombre;
+    }
 
- function getRol(){
-    return $this->rol;
+    function setApellido(){
+        $this->apellido = $apellido;
+    }
 
- }
+    function setEmail(){
+        $this->email = $email;
+    }
 
- function getImagen(){
-    return $this->imagen;
+    function setPassword(){
+        $this->password = $password;
+    }
 
-}
+    function setRol(){
+        $this->rol = $rol;
+    }
 
-function setId_usuario(){
-    return $this->getId_usuario = $id_usuario;
-
-}
-
-
-function setNombre(){
-    $this->nombre = $nombre;
-
-
-}
-
-function setApellido(){}
-
-}
-
-
-
- 
-
-
-
- 
-
-
-
-
-
+    function setImagen(){
+        $this->imagen = $imagen;
+    }
+        //ficticio pero que funciones para mostrar usuarios
+        public function conseguirTodos(){
+        echo "IMPRIMIENDO TODOS LOS USUARIOS...";
+    }
 }
