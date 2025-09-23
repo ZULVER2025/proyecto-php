@@ -2,8 +2,8 @@
 
 <?php
 
-    require_once 'controllers/UsuarioController.php';
+  require_once 'controllers/UsuarioController.php';
 
-    $controlador = new UsuarioController();
-
-    $controlador->mostrarTodos();
+  $controlador = new UsuarioController();
+  $controlador->mostrarTodos();
+  $controlador-> crear();

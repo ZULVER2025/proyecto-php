@@ -5,5 +5,6 @@ class database{
     public static function conectar(){
             $conexion = new mysqli("localhost","root","","tienda3"); //mysqli es para indicar que se usa mysql="servidor","usuario","","basede datos"
             $conexion->query("SET NAMES 'utf8'"); //realizar la conexion (uf-8 es el idioma que aceptara) 
+            return $conexion;
     }
 }
